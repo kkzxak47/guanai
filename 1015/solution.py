@@ -67,7 +67,7 @@ def test1():
     l = list(range(5))
     for perm in itertools.permutations(l):
         median = median5_cmp6(*perm)
-        print(median, perm)
+        # print(median, perm)
         assert(2 == median)
     print('median5_cmp6 ok')
 
@@ -76,7 +76,7 @@ def test2():
     l = list(range(5))
     for perm in itertools.permutations(l):
         sorted_perm = sort5_cmp7(perm)
-        print(perm, sorted_perm)
+        # print(perm, sorted_perm)
         assert(sorted(perm) == sorted_perm)
     print('sort5_cmp7 ok')
 
